@@ -32,13 +32,13 @@ public class CodeGen {
 		int Min = 1111;
 		int Max = 9999;
 		int RandomInt = Min + (int)(Math.random() * ((Max - Min) + 1));
-		File CodeFile = new File("C:\\Users\\Ralph\\Desktop\\final\\Bits\\FinTech\\FinTechProject\\src\\QRcodes\\" + (Integer.toString(RandomInt)) + userName + childID + ".png");
+		File CodeFile = new File("C:\\Users\\Ralph\\Desktop\\final13\\QwikTran\\src\\QRcodes" + (Integer.toString(RandomInt)) + userName + childID + ".png");
 		FileOutputStream CodeFileGen = new FileOutputStream(CodeFile);
 		
 		CodeFileGen.write(outcode.toByteArray());
 		CodeFileGen.flush();
 		
-		return "C:\\Users\\Ralph\\Desktop\\final\\Bits\\FinTech\\FinTechProject\\src\\QRcodes\\" + (Integer.toString(RandomInt)) + userName + childID + ".png" ;
+		return "C:\\Users\\Ralph\\Desktop\\final13\\QwikTran\\src\\QRcodes" + (Integer.toString(RandomInt)) + userName + childID + ".png" ;
 
 	}
 	public static void main(String[] args) throws Exception{
