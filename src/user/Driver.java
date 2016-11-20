@@ -45,14 +45,14 @@ public class Driver {
 //		
 		
 		//send sms notification to Dad
-		SMS.txtTrans(transactionstring.replace("_", " ") , "Student");
+		SMS.txtTrans(transactionstring.replace("_", " ") , "Parent");
 		
 		//Ralph buys something from James&Sons for $100
 		String transactionstring2 = James.ReadQRandMakeTranaction(Tirth_QR, "$300");
 		System.out.println(transactionstring2.replace("_", " "));
 
 		//send sms notification to Dad
-		SMS.txtTrans(transactionstring2.replace("_", " ") , "Student");
+		SMS.txtTrans(transactionstring2.replace("_", " ") , "Parent");
 
 		
 		
