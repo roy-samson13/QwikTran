@@ -50,7 +50,7 @@ public class Driver {
 		System.out.println(transactionstring2.replace("_", " "));
 
 		//send sms notification to Dad
-		SMS.txtTrans(transactionstring2 , "Parent");
+		SMS.txtTrans(transactionstring2.replace("_", " ") , "Parent");
 
 		
 		
