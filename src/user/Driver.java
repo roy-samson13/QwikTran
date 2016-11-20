@@ -39,18 +39,20 @@ public class Driver {
 		System.out.println(transactionstring.replace("_", " "));
 		
 		//send all data to backend storage server
-//		CreateXMLFile xmlobject = new CreateXMLFile("C:\\Users\\Ralph\\Desktop\\final\\Bits\\FinTech\\FinTechProject\\src\\libs", Vrund.getUsername(), Vrund.getFirstname(), Vrund.getLastname(), Vrund.Children.get(0).getFirstName(), Vrund.Children.get(0).getLastName(), "093439", James.getShopName(), James.getItemName(), James.location);
-		
+//		CreateXMLFile xmlobject = new CreateXMLFile();
+//		
+//		xmlobject.CreateXML(path, username, pFName, pLName, cID, cFName, cLName, tran, rName, iName, p, loc);("C:\\Users\\Ralph\\Desktop\\final\\Bits\\FinTech\\FinTechProject\\src\\libs", Vrund.getUsername(), Vrund.getFirstname(), Vrund.getLastname(), Vrund.Children.get(0).getFirstName(), Vrund.Children.get(0).getLastName(), "093439", James.getShopName(), James.getItemName(), James.location);
+//		
 		
 		//send sms notification to Dad
-		SMS.txtTrans(transactionstring.replace("_", " ") , "Parent");
+		SMS.txtTrans(transactionstring.replace("_", " ") , "Student");
 		
 		//Ralph buys something from James&Sons for $100
 		String transactionstring2 = James.ReadQRandMakeTranaction(Tirth_QR, "$300");
 		System.out.println(transactionstring2.replace("_", " "));
 
 		//send sms notification to Dad
-		SMS.txtTrans(transactionstring2.replace("_", " ") , "Parent");
+		SMS.txtTrans(transactionstring2.replace("_", " ") , "Student");
 
 		
 		
